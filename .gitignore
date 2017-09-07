@@ -1,3 +1,4 @@
 .idea
 /magmi/state/*
 !/magmi/state/dummy.txt
+/node_modules/
