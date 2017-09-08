@@ -2,3 +2,6 @@
 /magmi/state/*
 !/magmi/state/dummy.txt
 /node_modules/
+sftp-config.json
+*.sublime-project
+*.sublime-workspace
