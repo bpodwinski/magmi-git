@@ -96,7 +96,7 @@ if (!$eplconf->hasSection("PLUGINS_DATASOURCES")) {
 </div>
 </div>
 
-<div class="magmi-run mb-4">
+<div id="magmi-run" class="magmi-run mb-4">
 <div class="card">
 	<h3 class="card-header subtitle">
 		<span>Run Magmi</span>
@@ -157,7 +157,7 @@ $cansock = true;
 $dmysqlsock = DBHelper::getMysqlSocket();
 $cansock = !($dmysqlsock === false);
 ?>
-<div class="col-12 col-md-7 col-xl-8 mb-4">
+<div id="magmi-parameters" class="magmi-parameters col-12 col-md-7 col-xl-8 mb-4">
 	<div class="card">
 	<h3 class="card-header">
 		<span>Configure Global Parameters</span> <span id="commonconf_msg" class="float-right saveinfo">
