@@ -4,7 +4,6 @@ require_once("security.php");
 ini_set("display_errors", 1);
 require_once("../inc/magmi_defs.php");
 require_once("../inc/magmi_statemanager.php");
-
 try {
     $engdef = explode(":", $params["engine"]);
     $engine_name = $engdef[0];
@@ -13,7 +12,6 @@ try {
 } catch (Exception $e) {
     die("ERROR");
 }
-
 if (Magmi_StateManager::getState() !== "running") {
     Magmi_StateManager::setState("idle");
     $pf = Magmi_StateManager::getProgressFile(true);
@@ -32,7 +30,6 @@ if (Magmi_StateManager::getState() !== "running") {
     } else {
         $mmi_imp->setLogger(new EchoLogger());
     }
-
     $mmi_imp->run($params);
 } else {
     die("RUNNING");
