@@ -275,8 +275,8 @@ handleRunChoice = function(radioname, changeinfo) {
 }
 
 cancelimport = function() {
-	$('overlay').hide();
-	$('pluginschanged').addClassName('hide');
+	$j('overlay').hide();
+	$j('pluginschanged').addClass('hide');
 	$j('#pluginschanged.hide').modal('hide');
 };
 
